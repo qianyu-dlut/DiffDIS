@@ -1,0 +1,17 @@
+accelerate==1.1.1
+datasets==3.1.0
+einops==0.8.0
+matplotlib==3.10.0
+numpy==1.23.5
+omegaconf==2.3.0
+opencv-python==4.10.0.84
+pandas==2.2.3
+pillow==10.2.0
+pytorch-lightning==2.4.0
+safetensors==0.4.5
+scipy==1.14.1
+scikit-image==0.24.0
+tensorboard==2.18.0
+timm==1.0.11
+transformers==4.46.3
+ttach==0.0.3
