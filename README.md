@@ -1,5 +1,5 @@
 # DiffDIS
-The official repo of the ICLR 2025 paper, [High-Precision Dichotomous Image Segmentation via Probing Diffusion Capacity](https://arxiv.org/abs/2410.10105v2)
+The official repo of the ICLR 2025 paper, [High-Precision Dichotomous Image Segmentation via Probing Diffusion Capacity](https://arxiv.org/abs/2410.10105)
 
 
 
@@ -51,12 +51,17 @@ python get_contour.py
 cd scripts
 bash run_train.sh
 ```
+or you can use [accelerate](https://github.com/huggingface/accelerate) library with updating the `--config_file` in `./scripts/run_train_accelerator.sh` and running:
+```
+cd scripts
+bash run_train_accelerator.sh
+```
 The model will be saved in `./saved_model/DiffDIS/`
 
 ## III. Inference
 1. Update the test dataset path in config file `./utils/config.py` (line 3~7)
 2. Copy the file `/path/to/sd-turbo/unet/config.json` and paste it under your checkpoint `./saved_model/DiffDIS/Model_XXX/unet/`.
-You can also download our trained unet at [Google Drive](https://drive.google.com/drive/folders/1U0go2eRZUy4Xrs15tgWASXcHV4wfURRI?usp=sharing).
+You can also download our trained unet at [Google Drive](https://drive.google.com/drive/folders/1NKmUbn9BiV7xYy_1c2khIBAuOQNuYAdR?usp=sharing).
 3. Update the `--checkpoint_path`, `--pretrained_model_path` and `--output_dir` in `./scripts/run_inference.sh`. 
 
 4. Start inference by:
@@ -71,7 +76,6 @@ bash run_inference.sh
 python test_score.py
 ```
 
-<!-- You can get our prediction maps  at [Google Drive](https://drive.google.com/file/d/1aiqncRKFNd8qDXytSilGjY40rZa-Pkg7/view?usp=sharing). -->
 
 ## Related work
 Our code is based on 
@@ -84,6 +88,11 @@ Our code is based on
 
 We are grateful to the authors of these projects for their pioneering work and contributions!
 
+## To do
+- Huggingface app demo on the way...
+
+## Contact
+If you have any questions, please feel free to contact me(ms.yuqian AT mail DOT dlut DOT edu DOT cn).
 
 ## Citations
 If you find this code useful, we kindly ask you to cite our paper in your work.
@@ -91,7 +100,7 @@ If you find this code useful, we kindly ask you to cite our paper in your work.
 @article{DiffDIS,
   title={High-Precision Dichotomous Image Segmentation via Probing Diffusion Capacity},
   author={Yu, Qian and Jiang, Peng-Tao and Zhang, Hao and Chen, Jinwei and Li, Bo and Zhang, Lihe and Lu, Huchuan},
-  journal={arXiv preprint arXiv:2410.10105v2},
+  journal={arXiv preprint arXiv:2410.10105},
   year={2024}
 }
 

@@ -198,9 +198,9 @@ for epoch in range(1, opt.epoch+1):
 
     # save checkpoints every 10 epochs
     if epoch % 10 == 0: 
-        save_path = f'./saved_model/DiffDIS/Model_{epoch}/unet/'
+        save_path = f'../saved_model/DiffDIS/Model_{epoch}/unet/'
         if not os.path.exists(save_path):
             os.makedirs(save_path)
         save_model(unet, f'{save_path}diffusion_pytorch_model.safetensors')
         optimizer_state = generator_optimizer.state_dict()
-        torch.save(optimizer_state, f'./saved_model/DiffDIS/Model_{epoch}/generator_optimizer.pth')
+        torch.save(optimizer_state, f'../saved_model/DiffDIS/Model_{epoch}/generator_optimizer.pth')
