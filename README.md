@@ -1,7 +1,11 @@
 # DiffDIS
 The official repo of the ICLR 2025 paper, [High-Precision Dichotomous Image Segmentation via Probing Diffusion Capacity](https://arxiv.org/abs/2410.10105)
 
-
+<div align="center" style="display: flex; justify-content: center; flex-wrap: wrap;">
+  <a href='https://arxiv.org/pdf/2410.10105'><img src='https://img.shields.io/badge/arXiv-DiffDIS-B31B1B'></a>&ensp; 
+  <a href='https://huggingface.co/spaces/qianyu1217/diffdis'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20-Model-blue'></a>&ensp;
+  <a href='LICENSE'><img src='https://img.shields.io/badge/License-MIT-yellow'></a>&ensp; 
+</div>
 
 
 ## Introduction
